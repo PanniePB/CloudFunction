@@ -9,6 +9,6 @@ steps:
   args: ['functions', 'deploy', 'cicd-function', '--trigger-http', '--runtime', 'nodejs16', '--entry-point', 'helloFromGit']
   dir: 'git-function'
 options:
-  logging: REGIONAL
+  logging: logging: CLOUD_LOGGING_ONLY
 
 
