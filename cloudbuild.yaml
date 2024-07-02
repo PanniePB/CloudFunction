@@ -8,5 +8,5 @@ steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['functions', 'deploy', 'cicd-function', '--trigger-http', '--runtime', 'nodejs16', '--entry-point', 'helloFromGit']
   dir: 'git-function'
-  options:
-  env: ['CLOUD_LOGGING_ONLY=true']
+ env:
+      - 'CLOUD_LOGGING_ONLY=true'
