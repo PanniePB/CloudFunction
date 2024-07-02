@@ -9,7 +9,7 @@ steps:
   args: ['functions', 'deploy', 'cicd-function', '--trigger-http', '--runtime', 'nodejs16', '--entry-point', 'helloFromGit']
   dir: 'git-function'
 options:
-  logsBucket: 'cloudbuild'
+  logsBucket: 'cprojects/students-api-db-427606/logs/cloudfunctions.googleapis.com%2Fcloud-functions'
   
 
 
